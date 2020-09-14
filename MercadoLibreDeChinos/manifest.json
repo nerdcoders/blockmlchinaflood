@@ -1,0 +1,19 @@
+{
+	"name": "MercadoLibre Block International",
+	"version": "1.0",
+	"description": "Oculta las ventas internacionales",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"matches": ["https://*.mercadolibre.cl/*"],
+			"js": ["content.js"],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": [
+		"activeTab"
+	],
+	"browser_action": {
+		"default_icon": "icon.png"
+	}
+}
